@@ -1,0 +1,24 @@
+main {
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    box-shadow: 1px 3px 10px black;
+    border-radius: 10px;
+    max-width: 50vw;
+}
+
+section {
+    text-align: left;
+    margin-right: 10vw;
+}
+
+h2 {
+    margin-top: 30px;
+    text-align: left;
+}
+
+main > ul > li {
+    margin-top: 3px;
+}
+
+main > ol > li {
+    margin-top: 3px;
+}
