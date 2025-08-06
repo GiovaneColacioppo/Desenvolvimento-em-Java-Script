@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #BBFDFA, #14BDDC, #01B4D7);
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    padding: 50px;
+    margin: 50px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    background-color: white;
+}
