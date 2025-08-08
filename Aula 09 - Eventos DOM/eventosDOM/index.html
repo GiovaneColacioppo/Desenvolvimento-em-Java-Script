@@ -19,7 +19,7 @@
 </head>
 <body>
     
-    <div onmousemove="mudarCor()" id="caixa" onmouseout="branco()" id="caixa">
+    <div onmousemove="mudarCor()" id="caixa" onmouseout="voltaCor()" id="caixa">
 
         CAIXA
 
@@ -32,7 +32,7 @@
             caixa.style.background = "blue"
         }
 
-        function branco(){
+        function voltaCor(){
             let caixa = document.getElementById("caixa")
             caixa.style.background = "white"
 
