@@ -1,0 +1,19 @@
+let num = 400
+
+if (num >= 200) {
+
+    console.log("Você viajará " + num + "km e ");
+
+    num = num * 0.45
+
+    console.log("o preço será de R$" + num );
+    
+} else {
+
+    console.log("Você viajará " + num + "km e ");
+
+    num = num * 0.50
+
+    console.log("o preço será de R$" + num );
+
+}

@@ -1,0 +1,17 @@
+function mostrarResultado(){
+
+if (num >= 80) {
+
+    excesso = num - 80
+
+    excesso = excesso * 7
+
+    console.log("Você foi multado e terá que pagar R$" + excesso);
+    
+} else {
+
+    console.log("Você não foi multado.");
+    
+
+}
+}
