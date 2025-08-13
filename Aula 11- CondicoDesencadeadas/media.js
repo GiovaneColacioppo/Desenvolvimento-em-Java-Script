@@ -18,6 +18,8 @@ function mostrarResultado() {
 
     } else if (media >= 5) {
          
+        let recuperacao = parseInt(document.getElementById ("num1").value)
+
         paragrafoResultado.innerHTML = "RECUPERAÇÃO"
         paragrafoResultado.style.color = "red"
 
