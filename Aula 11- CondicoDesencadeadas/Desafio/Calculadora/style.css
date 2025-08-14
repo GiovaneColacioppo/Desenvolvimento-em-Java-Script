@@ -1,0 +1,116 @@
+    /* Reseta as margens e padding do body */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh; /* Ocupa toda a altura da tela */
+      background-image: linear-gradient(to bottom, #00D7FE, #019CDF, #0081CF);
+      overflow: hidden; /* Impede a criação de barra de rolagem */
+    }
+
+    /* Centraliza o main */
+    main {
+        margin: 100px auto;
+      background: #ffffffcc; /* Fundo branco semi-transparente */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input, select {
+      display: block;
+      width: 100%;
+      text-indent: 10px;
+      padding: 10px 0px;
+      margin: 10px 0px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    p#resultado {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .txt-animado span{
+        font-size: 45px;
+        position: relative;
+    }
+
+    .txt-animado span::before {
+        content: "";
+        color: #ff007b;
+        animation: palavras 10s infinite;
+    }
+
+    .txt-animado span::after {
+
+        content: "";
+        position: absolute;
+        height: 100%;
+        border-left: 2px solid #ff007b;
+        right: -10px;
+        animation: cursor .5s infinite, digita 10s steps(15) infinite;
+        width: calc(100% + 18px);
+        background-color: #CCECF9;
+
+    }
+
+    @keyframes digita {
+        10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% { 
+            width: 0;
+        }
+        5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+            width: calc(100% + 18px);
+        }
+    }
+
+    @keyframes cursor {
+        0% {
+            border-left: 2px solid #ff007b;
+        }
+
+
+    }
+
+    @keyframes palavras {
+        0%,20%{
+            content: "Não";
+        }
+        21%,40%{
+            content: "sobrou";
+        }
+        41%,60%{
+            content: "NADA";
+        }
+        61%,80%{
+            content: "pro";
+        }
+        81%,100%{
+            content: "betinha";
+        }
+    }
