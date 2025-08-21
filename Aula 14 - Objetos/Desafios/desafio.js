@@ -69,5 +69,19 @@ livrosFantasiaDesc.forEach((livro) => {
     
 })
 
+console.log("\n\n\n");
 
 
+
+livros.sort((a, b) => a.titulo.localeCompare(b.titulo))
+console.log(livros + "\n\n\n");
+
+
+
+const valorTotalEstoque = livros.reduce((total, livro) => {
+    let valor = total + livro.preco * livro.estoque;
+    return valor
+
+}, 0)
+
+console.log("Total valor será " + valorTotalEstoque);
